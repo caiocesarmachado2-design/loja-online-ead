@@ -11,6 +11,6 @@ function calculartotal (itens) {
 
     // aplica desconto de fidelidade
     // antes de retornar o valor final
-    
+
     return total
 }  
