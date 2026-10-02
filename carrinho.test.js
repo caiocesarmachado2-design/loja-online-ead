@@ -8,11 +8,11 @@ test('calcula o total do carrinho corretamente', () => {
         {nome: 'Boné', preco: 30, quantidade: 1 },
     ];
 
-    const total = calcularTotalCarrinho[itens];
+    const total = calcularTotalCarrinho(itens);
 
-    assert.strictEqual[total, 130];
+    assert.strictEqual(total, 130);
 });
 
-test['carrinho vazio soma zero', [] => {assert.strictEqual[calcularTotalCarrinho([]),0];
+test('carrinho vazio soma zero', () => {assert.strictEqual(calcularTotalCarrinho([]),0);
 
-}];
+});
