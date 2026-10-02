@@ -4,12 +4,13 @@ on:
   pull_request:
     branches: [ main ]
 
-    jobs:
-      testes:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v4
-          - name: Instalar dependências
-            run: npm install 
-          - name: Rodar os testes
-            run: npm testes
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar dependências
+        run: npm install 
+      - name: Rodar os testes
+        run: npm testes
